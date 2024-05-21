@@ -1,0 +1,11 @@
+a {
+    color:rgb(0, 136, 255);
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration:none;
+    background: rgb(150, 206, 255);
+    padding: 2px 4px; 
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
