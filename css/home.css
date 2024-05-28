@@ -18,6 +18,7 @@ footer{background-color: #2B4D6B;
 body{
     margin: 0px;
     padding: 0px;
+/*nedenstående tilhører hovedmenu*/
 }
 .header.main{
     width: 100%;
@@ -99,6 +100,7 @@ nav li:first-child{
 @media(max-width:400px){
     .sidebar{width: 100%;
     }
+/*nedenstående tilhører indhold på hjem side*/
 }
 .grid-main-intro {
     display: grid;
@@ -107,7 +109,7 @@ nav li:first-child{
 }
 .grid-main-intro h1 {
   font-size: 50px;
-  line-height: 50px;
+  line-height: 60px;
   color: #2B4D6B;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 50px;
@@ -122,4 +124,24 @@ nav li:first-child{
 .grid-main-intro p img{
     border-radius: 20px;
     margin: 20px;
+}
+
+/*nedenstående tilhører projekter siden*/
+.grid-projekter{
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color:#516B8B
+}
+.grid-projekter-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color:#7F9CC2
+}
+.grid-projekter-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #516B8B;
 }
