@@ -127,21 +127,31 @@ nav li:first-child{
 }
 
 /*nedenstående tilhører projekter siden*/
-.grid-projekter{
-  display: grid; 
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  background-color:#516B8B
+.projekter-overskrift {
+    font-size: 50px;
+    color: #2B4D6B;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.grid-projekter-2{
+.gallery {
+    grid-gap: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color:#7F9CC2
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8 ,5vw);
 }
-.grid-projekter-3{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: #516B8B;
+.gallery_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery_item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
