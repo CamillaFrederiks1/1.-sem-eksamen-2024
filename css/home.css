@@ -138,3 +138,17 @@ nav li:first-child{
     justify-content: center;
     gap: 30px;
 }
+.image-gallery > li {
+    flex-basis: 550px;
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2B4D6B;
+}
+.image-gallery li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
