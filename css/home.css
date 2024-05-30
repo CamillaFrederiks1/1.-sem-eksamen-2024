@@ -116,6 +116,22 @@ nav li:first-child{
     color: #2B4D6B;
     margin: 10px;
     font-size: 25px;
+    flex-wrap: wrap;
+    
+}
+.hjem-indhold img {
+    border-radius: 30px;
+}
+@media (max-width:600px) {
+    .hjem-indhold {
+        width: 100%;
+    }
+    .hjem-overskrift {
+        width: 100%;
+    }
+.hjem-indhold img {
+    width: 100%;
+}
 }
 
 
@@ -168,9 +184,17 @@ nav li:first-child{
     transform: scale(1);
 }
 
-@media only screen and (min-width:768px) {
+@media (max-width:600px) {
     .image-gallery {
         flex-direction: row;
+        width: 100%;
+    }
+}
+
+@media (min-width:601px) {
+    .image-gallery {
+        flex-direction: row;
+        width: 100%;
     }
 }
 
@@ -179,14 +203,20 @@ nav li:first-child{
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-size: 30px;
 color: #2B4D6B;
+display: flex;
+flex-wrap: wrap;
 }
 
 .om-mig-tekst p {
     font-size: 20px;
     color: #2B4D6B;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
 }
 .fakta-om-mig {
+    display: flex;
+    flex-wrap: wrap;
    width: 100%; 
    padding: 60px 0;
    display: flex;
@@ -195,10 +225,29 @@ color: #2B4D6B;
    justify-content: center;
 }
 .fakta-om-mig img {
+    display: flex;
+    flex-wrap: wrap;
     margin: 30px;
     border-radius: 30px;
 }
 .om-mig-tekst {
+display: flex;
+flex-wrap: wrap;
 flex-basis: 650px;
 }
-
+.om-mig-skills p {
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: start;
+}
+@media (max-width:600px) {
+    .om-mig-tekst {
+        width: 100%;
+    }
+    .fakta-om-mig img {
+        width: 100%;
+    }
+    .fakta-om-mig {
+        width: 100%;
+    }
+}
